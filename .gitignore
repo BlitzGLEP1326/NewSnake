@@ -1,0 +1,4 @@
+*.DS_Store
+*.exe
+*.NETFramework,Version=v4.5.AssemblyAttribute.cs
+*.exe.mdb
