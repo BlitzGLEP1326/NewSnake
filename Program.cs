@@ -6,12 +6,14 @@ namespace Snake
 	{
 		public static void Main (string[] args)
 		{
-			int x1 = 1;
-			int y1 = 3;
-			char sym1 = '*';
+			Console.WriteLine ("Welcome to console snake !!!");
 			Console.ReadLine ();
-			Console.SetCursorPosition (x1, y1);
-			Console.Write (sym1);
+			Point p1 = new Point();
+			p1.x = 1;
+			p1.y = 3;
+			p1.ch = '*';
+			p1.draw();
+			Console.ReadLine ();
 		}
 
 		static void Draw(int x, int y, char s)
