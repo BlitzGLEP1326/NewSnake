@@ -3,11 +3,8 @@ using System.Collections.Generic;
 
 namespace Snake
 {
-	public class HorizontalLine
+	public class HorizontalLine : figure
 	{
-		//список точек
-		List<Point> pList;
-
 		//конструктор класса
 		public HorizontalLine (int xLeft, int xRight, int y, char s)
 		{
@@ -17,13 +14,6 @@ namespace Snake
 				pList.Add (p);
 			}
 
-		}
-
-		public void draw()
-		{
-			foreach (Point p in pList) {
-				p.draw ();
-			}
 		}
 	}
 }
