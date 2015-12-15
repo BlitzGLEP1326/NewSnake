@@ -17,20 +17,8 @@ namespace Snake
 			p1.draw();
 			p2.draw();
 			//
-			List<int> numList = new List<int>();
-			numList.Add (0);
-			numList.Add (1);
-			numList.Add (2);
-			//
-			int x = numList[0];
-			int y = numList[1];
-			int z = numList[2];
-			//
-			foreach (int i in numList) {
-				Console.WriteLine (i);
-			}
-			//
-			numList.RemoveAt(0);
+			HorizontalLine line = new HorizontalLine(5, 10, 3, '*');
+			line.draw ();
 			//
 			Console.ReadLine ();
 		}
