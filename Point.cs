@@ -14,8 +14,16 @@ namespace Snake
 			Console.Write (ch);
 		}
 
+		public Point(int _x, int _y, char _s)
+		{
+			x = _x;
+			y = _y;
+			ch = _s;
+		}
+
 		public Point ()
 		{
+			Console.WriteLine ("создается новая точка");
 		}
 	}
 }
