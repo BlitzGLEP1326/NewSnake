@@ -14,6 +14,26 @@ namespace Snake
 			Console.Write (ch);
 		}
 
+		public Point(Point p)
+		{
+			x = p.x;
+			y = p.y;
+			ch = p.ch;
+		}
+
+		public void Move(int offset, direction direct )
+		{
+			if (direct == direction.RIGHT) {
+				x += offset;
+			} else if (direct == direction.LEFT) {
+				x -= offset;
+			} else if (direct == direction.UP) {
+				y += offset;
+			} else if (direct == direction.DOWN) {
+				y -= offset;
+			}
+		}
+
 		public Point(int _x, int _y, char _s)
 		{
 			x = _x;
@@ -24,6 +44,11 @@ namespace Snake
 		public Point ()
 		{
 			Console.WriteLine ("создается новая точка");
+		}
+
+		public override string ToString ()
+		{
+			return x + ", " + y + ", " + ch;
 		}
 	}
 }

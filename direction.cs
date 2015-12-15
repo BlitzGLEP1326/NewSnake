@@ -2,11 +2,12 @@
 
 namespace Snake
 {
-	public class direction
+	public enum direction
 	{
-		public direction ()
-		{
-		}
+		LEFT,
+		RIGHT,
+		UP,
+		DOWN
 	}
 }
 

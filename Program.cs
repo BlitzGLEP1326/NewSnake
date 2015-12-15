@@ -25,14 +25,8 @@ namespace Snake
 			leftLine.draw();
 			rightLine.draw();
 			//
-			Point p1 = new Point (3, 1, '*');
-			Point p2 = new Point (2, 5, '#');
-			//
-			p1.draw();
-			p2.draw();
-			//
-			HorizontalLine line = new HorizontalLine(5, 10, 3, '*');
-			line.draw ();
+			Point p = new Point(4,5,'*');
+			snake mySnake = new snake (p, 3, direction.RIGHT);
 			//
 			Console.ReadLine ();
 		}
