@@ -8,7 +8,7 @@ namespace Snake
 		{
 			Console.WriteLine ("Welcome to console snake !!!");
 			Console.ReadLine ();
-			Point p1 = new Point();
+			Point p1 = new Point(); 
 			p1.x = 1;
 			p1.y = 3;
 			p1.ch = '*';
