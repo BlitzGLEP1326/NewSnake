@@ -41,6 +41,12 @@ namespace Snake
 			ch = _s;
 		}
 
+		public void Clear()
+		{
+			ch = ' ';
+			draw ();
+		}
+
 		public Point ()
 		{
 			Console.WriteLine ("создается новая точка");

@@ -2,8 +2,13 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="11" Column="17" />
-      <File FileName="Point.cs" Line="14" Column="23" />
+      <File FileName="Program.cs" Line="22" Column="6" />
+      <File FileName="Point.cs" Line="15" Column="1" />
+      <File FileName="HorizontalLine.cs" Line="12" Column="39" />
+      <File FileName="VerticalLine.cs" Line="6" Column="36" />
+      <File FileName="figure.cs" Line="9" Column="31" />
+      <File FileName="snake.cs" Line="4" Column="13" />
+      <File FileName="direction.cs" Line="8" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

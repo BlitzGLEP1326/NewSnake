@@ -26,7 +26,20 @@ namespace Snake
 			rightLine.draw();
 			//
 			Point p = new Point(4,5,'*');
-			snake mySnake = new snake (p, 3, direction.RIGHT);
+			snake mySnake = new snake (p, 4, direction.RIGHT);
+			mySnake.draw ();
+			mySnake.Move ();
+			Thread.Sleep (300);
+			mySnake.Move ();
+			Thread.Sleep (300);
+			mySnake.Move ();
+			Thread.Sleep (300);
+			mySnake.Move ();
+			Thread.Sleep (300);
+			mySnake.Move ();
+			Thread.Sleep (300);
+			mySnake.Move ();
+			Thread.Sleep (300);
 			//
 			Console.ReadLine ();
 		}
