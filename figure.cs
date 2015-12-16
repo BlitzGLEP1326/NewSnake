@@ -14,7 +14,7 @@ namespace Snake
 		}
 
 		//отрисовка фигуры
-		public void draw()
+		public virtual void draw()
 		{
 			foreach (Point p in pList) {
 				p.draw ();
