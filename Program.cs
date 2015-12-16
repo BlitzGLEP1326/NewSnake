@@ -11,7 +11,7 @@ namespace Snake
 		{
 			Console.WriteLine ("Welcome to console snake !!!");
 			Console.ReadLine ();
-			Console.Clear ();
+			Console.Clear (); 
 			//
 			//Console.SetBufferSize (80, 25);
 			//отрисовка рамки
