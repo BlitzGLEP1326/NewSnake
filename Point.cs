@@ -28,9 +28,9 @@ namespace Snake
 			} else if (direct == direction.LEFT) {
 				x -= offset;
 			} else if (direct == direction.UP) {
-				y += offset;
-			} else if (direct == direction.DOWN) {
 				y -= offset;
+			} else if (direct == direction.DOWN) {
+				y += offset;
 			}
 		}
 

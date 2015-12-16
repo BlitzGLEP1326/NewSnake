@@ -27,21 +27,15 @@ namespace Snake
 			//
 			Point p = new Point(4,5,'*');
 			snake mySnake = new snake (p, 4, direction.RIGHT);
-			mySnake.draw ();
-			mySnake.Move ();
-			Thread.Sleep (300);
-			mySnake.Move ();
-			Thread.Sleep (300);
-			mySnake.Move ();
-			Thread.Sleep (300);
-			mySnake.Move ();
-			Thread.Sleep (300);
-			mySnake.Move ();
-			Thread.Sleep (300);
-			mySnake.Move ();
-			Thread.Sleep (300);
+			while (true) {
+				if (Console.KeyAvailable) {
+					ConsoleKeyInfo key = Console.ReadKey ();
+					mySnake.HandleKey (key.Key);
+				}
+				Thread.Sleep (100);
+				mySnake.Move ();
+			}
 			//
-			Console.ReadLine ();
 		}
 
 		static void Draw(int x, int y, char s)
