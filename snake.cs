@@ -31,6 +31,17 @@ namespace Snake
 			head.draw ();
 		}
 
+		internal bool eat(Point food)
+		{
+			Point head = GetNextPoint ();
+			if (head.isHit (food)) {
+				food.ch = head.ch;
+				pList.Add (food);
+				return true;
+			} else
+				return false;
+		}
+
 		public Point GetNextPoint()
 		{
 			Point head = pList [pList.Count  - 1];
