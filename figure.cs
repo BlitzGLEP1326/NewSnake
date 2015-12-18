@@ -6,7 +6,7 @@ namespace Snake
 	public class figure
 	{
 		//список точек
-		protected List<Point> pList;
+		protected List<Point> pList; 
 
 		public figure ()
 		{
