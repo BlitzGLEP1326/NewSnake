@@ -13,17 +13,7 @@ namespace Snake
 			Console.ReadLine ();
 			Console.Clear (); 
 			//
-			//Console.SetBufferSize (80, 25);
-			//отрисовка рамки
-			HorizontalLine upLine = new HorizontalLine(0, 78, 0, '+');
-			HorizontalLine downLine = new HorizontalLine(0, 78, 24, '+');
-			VerticalLine leftLine = new VerticalLine(0, 24, 0, '+');
-			VerticalLine rightLine = new VerticalLine(0, 24, 78, '+');
-			//
-			upLine.draw();
-			downLine.draw();
-			leftLine.draw();
-			rightLine.draw();
+
 			//
 			Point p = new Point(4,5,'*');
 			snake mySnake = new snake (p, 4, direction.RIGHT);

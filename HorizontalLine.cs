@@ -13,7 +13,13 @@ namespace Snake
 				Point p = new Point (x, y, s);
 				pList.Add (p);
 			}
+		}
 
+		public override void draw()
+		{
+			Console.ForegroundColor = ConsoleColor.Blue;
+
+			base.draw ();
 		}
 	}
 }
