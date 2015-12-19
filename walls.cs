@@ -24,9 +24,6 @@ namespace Snake
 			wallList.Add (downLine);
 			wallList.Add (leftLine);
 			wallList.Add (rightLine);
-
-
-
 		}
 
 		//

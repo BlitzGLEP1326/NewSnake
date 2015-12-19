@@ -1,16 +1,16 @@
 ﻿<Properties StartupItem="Snake.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="figure.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="walls.cs">
     <Files>
-      <File FileName="Program.cs" Line="51" Column="21" />
-      <File FileName="Point.cs" Line="13" Column="1" />
-      <File FileName="HorizontalLine.cs" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="35" Column="5" />
+      <File FileName="Point.cs" Line="4" Column="2" />
+      <File FileName="HorizontalLine.cs" Line="20" Column="47" />
       <File FileName="VerticalLine.cs" Line="1" Column="1" />
-      <File FileName="figure.cs" Line="17" Column="29" />
-      <File FileName="snake.cs" Line="40" Column="4" />
+      <File FileName="figure.cs" Line="41" Column="17" />
+      <File FileName="snake.cs" Line="35" Column="4" />
       <File FileName="direction.cs" Line="1" Column="1" />
       <File FileName="FoodCreator.cs" Line="16" Column="31" />
-      <File FileName="walls.cs" Line="1" Column="1" />
+      <File FileName="walls.cs" Line="33" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
