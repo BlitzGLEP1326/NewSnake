@@ -43,7 +43,7 @@ namespace Snake
 		{
 			//для каждого элемента списка проверяем на 
 			foreach (var p in pList) {
-				if ((p.x == fig.x) && (p.y == fig.y))
+				if (fig.isHit(p))
 					return true;
 			}
 			return false;

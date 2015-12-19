@@ -37,7 +37,7 @@ namespace Snake
 			return false;
 		}
 
-		//
+		//отрисовка стены ))
 		public void draw()
 		{
 			foreach (var wall in wallList) {

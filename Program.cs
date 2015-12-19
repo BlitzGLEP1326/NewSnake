@@ -26,6 +26,7 @@ namespace Snake
 			Point p = new Point(4,5,'*');
 			//создаем змейку
 			snake mySnake = new snake (p, 4, direction.RIGHT);
+			mySnake.draw ();
 			//создаем генератор еды
 			FoodCreator foodCreator = new FoodCreator(80, 25,'$');
 			//создаем точку-еду
@@ -51,7 +52,6 @@ namespace Snake
 					//перемещаем змейку
 					mySnake.Move ();
 				}
-				
 				//Thread.Sleep (100);
 				//читаем нажатые кнопки (вверх, вниз, вправо, влево)
 				if (Console.KeyAvailable) {
@@ -60,7 +60,7 @@ namespace Snake
 					mySnake.HandleKey (key.Key);
 				}
 				//устанавливаем задержку
-				Thread.Sleep (100);
+				Thread.Sleep (250);
 				//перемещаем змейку
 				mySnake.Move ();
 			}
