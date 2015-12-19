@@ -6,6 +6,7 @@ namespace Snake
 {
 	public class walls
 	{
+		//создаем список стен
 		List<figure> wallList;
 
 		//устанавливаем габариты карты
@@ -26,13 +27,14 @@ namespace Snake
 			wallList.Add (rightLine);
 		}
 
-		//
+		//проверка на столкновение со стеной/препятстсвием
 		internal bool isHit(figure fig)
 		{
 			foreach (var wall in wallList) {
-				if(wall)
-				
+				if (wall.IsHit (fig))
+					return true;
 			}
+			return false;
 		}
 
 		//

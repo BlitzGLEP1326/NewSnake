@@ -3,12 +3,16 @@ using System.Linq;
 using System.Threading;
 using System.Collections.Generic;
 
+//пространство имен "змейка"
 namespace Snake
 {
+	//класс змейки - дочерний класс класса фигура
 	public class snake : figure
 	{
+		//перечисление "направление"
 		public direction direct;
 
+		//конструктор (стартовая точка, длина, направление)
 		public snake (Point tail, int length, direction _direct)
 		{
 			direct = _direct;
@@ -20,6 +24,7 @@ namespace Snake
 			}
 		}
 
+		//перемещаем змейку
 		internal void Move()
 		{
 			Point tail = pList [0];
@@ -31,6 +36,7 @@ namespace Snake
 			head.draw ();
 		}
 
+		//проверка ест ли
 		internal bool eat(Point food)
 		{
 			Point head = GetNextPoint ();
@@ -42,6 +48,7 @@ namespace Snake
 				return false;
 		}
 
+		//получить следующую точку
 		public Point GetNextPoint()
 		{
 			Point head = pList [pList.Count  - 1];
@@ -50,6 +57,7 @@ namespace Snake
 			return nextPoint;
 		}
 
+		//проверка на столкновение с хвостом
 		internal bool isHitTail()
 		{
 			var head = pList.Last ();
@@ -60,6 +68,7 @@ namespace Snake
 			return false;
 		}
 
+		//обработчик нажатия клавиш (вверх, вниз, вправо, влево)
 		public void HandleKey(ConsoleKey key)
 		{
 			if(key == ConsoleKey.LeftArrow)
